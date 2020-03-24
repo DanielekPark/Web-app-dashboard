@@ -1,0 +1,422 @@
+/*-------------------------BASE STYLES-----------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-template-areas: 
+    'header'
+    'nav'
+    'main'; 
+}
+
+img{
+  border-radius: 100%;
+  width: 35%;
+}
+canvas{
+  background: white; 
+}
+
+
+/*-------------------------HEADER--------------------------------------*/
+.header{
+  grid-area: header;
+  background-color: #3f8abf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.box{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header svg{
+  width: 10%; 
+}
+
+.header svg:hover{
+  transform: scale(1.5); 
+  transition: .7s;
+}
+
+ #notifications:after{
+  content: '*';
+  color: red; 
+  font-size: 25px;
+}
+/*-------------------ALERT---------------------*/
+.alert-banner-close{
+  border: solid 1px; 
+}
+.alert-banner-close:hover{
+  cursor: pointer; 
+}
+
+/*-----------------------SIDEBAR NAVIGATION----------------------------*/
+.nav{
+  grid-area: nav;
+  background-color: #6ad78a;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+nav svg{
+  transform: scale(.6);
+}
+
+/*-----------------------WIDGET CONTAINER----------------------------*/
+.main{
+  grid-area: main;
+}
+
+/*------------------------DASHBOARD HEADER------------------------*/
+.main-header{
+  display: grid; 
+  grid-template-areas: 
+    'heading main-header-search';
+    grid-template-columns: 40% 60%;
+}
+.heading{
+   
+}
+.headline{
+   
+}
+
+.main-header-search{
+  margin-top: 2.5%; 
+}
+
+/*----------------------------ALERT BAR------------------------*/
+.alert{ 
+  background: red;
+}
+
+.alert-banner{
+  display: flex;
+  justify-content: space-between; 
+}
+
+#alert{
+  
+}
+
+/*-----------------------TRAFFIC SECTION LINE GRAPH------------------------*/
+.traffic{
+  display: grid; 
+}
+
+.traffic-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.traffic-nav{
+  list-style-type: none;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.traffic-nav-link{
+  
+}
+
+.active{
+  width: 50%; 
+}
+
+.widget-container-full{
+  margin: 0 auto;
+  width: 95vw; 
+}
+
+.widget-container-half{
+  width: 45vw; 
+}
+
+#traffic-chart{
+  width: 85vw;  
+}
+
+/*--------------TRAFFIC SECTION BAR AND DONUT CHARTS-----------------*/
+
+/*----------------------TRAFFIC SECTION BAR----------------------*/
+
+.widget-container-half{
+  
+}
+
+#daily-chart,
+#donut-chart{
+  width: 85vw; 
+}
+
+/*----------------------DONUT CHARTS----------------------*/
+#pie-chart{
+  
+}
+
+/*----------------------SOCIAL STATUS------------------------------*/
+.social-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: mediumpurple;
+}
+
+
+.social-image{
+  
+}
+.twitter{
+  transform: scale(.4);
+  fill: white
+}
+.facebook{
+  transform: scale(1.2);
+  padding-left: 26px;
+}
+.google{
+  transform: scale(.4); 
+}
+
+
+.social-text{
+  color: white; 
+}
+
+/*-------------------------------NEW MEMBERS WIDGET-------------------*/
+
+.members-container{
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+}
+.main img{
+  width: 50%; 
+}
+
+.members-text{
+  
+}
+
+
+/*-------------------------------RECENT ACTIVITY-------------------*/
+.recent{
+  
+}
+
+/*-------------------------------MESSAGING WIDGET-------------------*/
+.members{
+  display: grid;  
+}
+
+.widget-container{
+  
+}
+
+.form-field{
+  
+}
+
+#userField{
+  
+}
+
+.form-area{
+  
+}
+
+#messageField{
+  
+}
+.button-disabled,
+.button-primary{
+   margin-top: 5px; 
+}
+
+#send{
+  
+}
+/*-----------------------SETTINGS----------------------------*/
+.widget-container{
+  display: grid; 
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+.settings{
+  display: grid; 
+}
+
+.settings-button{
+  display: flex; 
+  justify-content: space-between;
+}
+
+/*NOTIFICATIONS TOGGLE BUTTON*/
+.wrapper{
+  display: flex; 
+  justify-content: space-between
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; 
+}
+
+.slide {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+}
+
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+}
+
+.notifications:checked + .slide {
+  background-color: green; 
+}
+
+.notifications:checked + .slide:before {
+  transform: translateX(26px); 
+}
+
+
+#timezone{
+  
+}
+
+#cancel,
+#save{
+  flex-grow: .4; 
+}
+/*-------------------------FOOTER--------------------------------------*/
+
+/*----------------------------MEDIA QUERIES------------------------*/
+@media (min-width: 768px){
+  .grid-container{
+     grid-template-columns: 55px 1fr; 
+     grid-template-areas: 
+       'header header'
+       'nav main'; 
+  }
+ /*-------------------------HEADER--------------------------------------*/  
+  .header svg{
+    width: 5%; 
+  }
+  
+  .header img {
+    width: 7%;
+  }
+  
+ /*-----------------------SIDEBAR NAVIGATION----------------------------*/
+ .nav{
+   grid-template-columns: 1fr; 
+   grid-template-rows: repeat(4, 100px); 
+   grid-gap: 0px;
+ }
+ 
+ nav svg{
+   transform: scale(.7);
+ }
+   
+ /*--------------TRAFFIC SECTION BAR AND DONUT CHARTS-----------------*/
+ /*----------------------TRAFFIC SECTION BAR----------------------*/
+ .daily{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+ 
+ #daily-chart,
+ #donut-chart{
+   width: 37.5vw; 
+ }
+   /*----------------------SOCIAL STATUS------------------------------*/
+   .social-media{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+ }
+
+ /*-------------------------------NEW MEMBERS WIDGET-------------------*/
+/*    
+   .traffic, 
+   .social{
+     grid-column: 1 / span 2;
+   }
+   
+   .daily,
+   .members,
+   .message{
+     grid-column: 1 /span 1; 
+   } */
+
+   .message{
+     display: grid; 
+     grid-template-columns: 1fr 1fr;
+     grid-row-gap: 5px; 
+   }
+  
+  .members{
+    grid-template-areas: 
+      'new-members recent'; 
+  }
+  
+  .new-members{
+    grid-area: 'new-members'
+  }
+  
+  .recent{
+    grid-area: 'recent'; 
+  }
+
+   .mobile, 
+   .activity,
+   .settings{
+     grid-column: 2 / span 1; 
+   }
+  
+  .widget-container{
+    display: grid; 
+    grid-gap:10px; 
+    grid-template-rows: 1fr 3fr 1fr; 
+    grid-template-columns: 85%;
+    align-self: end; 
+  }
+ 
+   .widget-container-full{
+     width: 95vw;
+   }
+   .widget-container-half{
+     width: 45vw; 
+   }
+
+  .settings-button{
+    display: flex;
+    justify-content: space-between;
+  }
+
+ }
+ 
+ @media(min-width: 1040px){
+ 
+ }
+
