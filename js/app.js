@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const userField = document.querySelector('#userField');
     const messageField = document.querySelector('#messageField');
     const send = document.querySelector('#send');
-    const badege = document.querySelector('.badge'); 
+    const badge = document.querySelector('.badge'); 
 
     /*---------------ALERT---------------*/
     alertBanner.innerHTML = `<div class="alert-banner">
