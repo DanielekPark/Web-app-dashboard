@@ -190,6 +190,7 @@ nav svg{
 
 .social-text{
   color: white; 
+  align-self: center; 
 }
 
 /*-------------------------------NEW MEMBERS WIDGET-------------------*/
