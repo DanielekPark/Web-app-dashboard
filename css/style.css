@@ -51,13 +51,6 @@ canvas{
   color: red; 
   font-size: 25px;
 }
-/*-------------------ALERT---------------------*/
-.alert-banner-close{
-  border: solid 1px; 
-}
-.alert-banner-close:hover{
-  cursor: pointer; 
-}
 
 /*-----------------------SIDEBAR NAVIGATION----------------------------*/
 .nav{
@@ -76,7 +69,13 @@ nav svg{
 .main{
   grid-area: main;
 }
-
+/*-------------------ALERT---------------------*/
+.alert-banner-close{
+  border: solid 1px; 
+}
+.alert-banner-close:hover{
+  cursor: pointer; 
+}
 /*------------------------DASHBOARD HEADER------------------------*/
 .main-header{
   display: grid; 
@@ -168,16 +167,13 @@ nav svg{
 .social-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: mediumpurple;
 }
-
 
 .social-image{
   align-self: center; 
 }
 .twitter{
   transform: scale(.4);
-  fill: white
 }
 .facebook{
   transform: scale(1.2);
@@ -189,15 +185,14 @@ nav svg{
 
 
 .social-text{
-  color: white; 
-  align-self: center; 
+  
 }
 
 /*-------------------------------NEW MEMBERS WIDGET-------------------*/
-
+.recent-container,
 .members-container{
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 20% 60% 20%;
 }
 .main img{
   width: 50%; 
@@ -264,7 +259,7 @@ nav svg{
 /*NOTIFICATIONS TOGGLE BUTTON*/
 .wrapper{
   display: flex; 
-  justify-content: space-between
+  justify-content: space-between; 
 }
 .toggle {
   position: relative;
