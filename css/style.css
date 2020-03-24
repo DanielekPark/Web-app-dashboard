@@ -173,7 +173,7 @@ nav svg{
 
 
 .social-image{
-  
+  align-self: center; 
 }
 .twitter{
   transform: scale(.4);
