@@ -30,6 +30,7 @@ canvas{
   flex-direction: row;
   justify-content: space-between;
   align-items: center; 
+  position: relative;
 }
 
 .box{
@@ -46,11 +47,15 @@ canvas{
   transition: .7s;
 }
 
- #notifications:after{
-  content: '*';
-  color: red; 
-  font-size: 25px;
-}
+.badge {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+  top: 25px;
+  right: 168px;
+} 
 
 /*-----------------------SIDEBAR NAVIGATION----------------------------*/
 .nav{
@@ -323,6 +328,16 @@ nav svg{
   .header img {
     width: 7%;
   }
+
+  .badge {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 15px;
+    right: 145px;
+  } 
   
  /*-----------------------SIDEBAR NAVIGATION----------------------------*/
  .nav{
@@ -413,6 +428,9 @@ nav svg{
  }
  
  @media(min-width: 1040px){
- 
+  .badge {
+    top: 15px;
+    right: 146px;
+}
  }
 

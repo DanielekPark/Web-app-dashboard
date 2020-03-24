@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const userField = document.querySelector('#userField');
     const messageField = document.querySelector('#messageField');
     const send = document.querySelector('#send');
+    const badege = document.querySelector('.badge'); 
 
     /*---------------ALERT---------------*/
     alertBanner.innerHTML = `<div class="alert-banner">
@@ -116,7 +117,7 @@ const mobileOptions = {
       const notification = document.querySelector('#notifications'); 
       if(close.className === 'alert-banner-close'){
          alertBanner.style.display = 'none';
-         notification.style.display = 'none';
+         badge.style.display = 'none';
          }
     }); 
       /*------MESSAGING-----*/
