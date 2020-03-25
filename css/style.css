@@ -21,7 +21,6 @@ canvas{
   background: white; 
 }
 
-
 /*-------------------------HEADER--------------------------------------*/
 .header{
   grid-area: header;
@@ -48,13 +47,13 @@ canvas{
 }
 
 .badge {
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   border-radius: 50%;
   background-color: red;
   position: absolute;
-  top: 25px;
-  right: 150px;
+  top: 31px;
+  right: 158px;
 }
 
 /*-----------------------SIDEBAR NAVIGATION----------------------------*/
@@ -88,12 +87,6 @@ nav svg{
     'heading main-header-search';
     grid-template-columns: 40% 60%;
 }
-.heading{
-   
-}
-.headline{
-   
-}
 
 .main-header-search{
   margin-top: 2.5%; 
@@ -107,10 +100,6 @@ nav svg{
 .alert-banner{
   display: flex;
   justify-content: space-between; 
-}
-
-#alert{
-  
 }
 
 /*-----------------------TRAFFIC SECTION LINE GRAPH------------------------*/
@@ -129,9 +118,6 @@ nav svg{
    grid-template-columns: repeat(4, 1fr);
 }
 
-.traffic-nav-link{
-  
-}
 
 .active{
   width: 50%; 
@@ -154,9 +140,6 @@ nav svg{
 
 /*----------------------TRAFFIC SECTION BAR----------------------*/
 
-.widget-container-half{
-  
-}
 
 #daily-chart,
 #donut-chart{
@@ -164,9 +147,7 @@ nav svg{
 }
 
 /*----------------------DONUT CHARTS----------------------*/
-#pie-chart{
-  
-}
+
 
 /*----------------------SOCIAL STATUS------------------------------*/
 .social-container{
@@ -179,7 +160,9 @@ nav svg{
 .social-image{
     align-self: center;
     border-radius: 100%;
-    background-color: mediumpurple; 
+    background-color: mediumpurple;
+    height: 90px;
+    width: 90px;
 }
 .twitter{
   transform: scale(.4);
@@ -191,7 +174,6 @@ nav svg{
 .google{
   transform: scale(.4); 
 }
-
 
 .social-text{
   color: mediumpurple;
@@ -208,11 +190,6 @@ nav svg{
   width: 50%; 
 }
 
-.members-text{
-  
-}
-
-
 /*-------------------------------RECENT ACTIVITY-------------------*/
 .recent{
   
@@ -223,33 +200,11 @@ nav svg{
   display: grid;  
 }
 
-.widget-container{
-  
-}
-
-.form-field{
-  
-}
-
-#userField{
-  
-}
-
-.form-area{
-  
-}
-
-#messageField{
-  
-}
 .button-disabled,
 .button-primary{
    margin-top: 5px; 
 }
 
-#send{
-  
-}
 /*-----------------------SETTINGS----------------------------*/
 .widget-container{
   display: grid; 
@@ -373,17 +328,7 @@ nav svg{
  }
 
  /*-------------------------------NEW MEMBERS WIDGET-------------------*/
-/*    
-   .traffic, 
-   .social{
-     grid-column: 1 / span 2;
-   }
-   
-   .daily,
-   .members,
-   .message{
-     grid-column: 1 /span 1; 
-   } */
+
 
    .message{
      display: grid; 
