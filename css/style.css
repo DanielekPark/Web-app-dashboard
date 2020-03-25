@@ -48,14 +48,14 @@ canvas{
 }
 
 .badge {
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	background-color: red;
-	position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
   top: 25px;
-  right: 168px;
-} 
+  right: 150px;
+}
 
 /*-----------------------SIDEBAR NAVIGATION----------------------------*/
 .nav{
@@ -143,11 +143,11 @@ nav svg{
 }
 
 .widget-container-half{
-  width: 45vw; 
+  width: 85vw; 
 }
 
 #traffic-chart{
-  width: 85vw;  
+  width: 45vw;  
 }
 
 /*--------------TRAFFIC SECTION BAR AND DONUT CHARTS-----------------*/
@@ -172,10 +172,14 @@ nav svg{
 .social-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
+  background: white;
+  border: solid 1px grey;
 }
 
 .social-image{
-  align-self: center; 
+    align-self: center;
+    border-radius: 100%;
+    background-color: mediumpurple; 
 }
 .twitter{
   transform: scale(.4);
@@ -190,7 +194,8 @@ nav svg{
 
 
 .social-text{
-  
+  color: mediumpurple;
+  align-self: center; 
 }
 
 /*-------------------------------NEW MEMBERS WIDGET-------------------*/
@@ -427,7 +432,7 @@ nav svg{
 
  }
  
- @media(min-width: 1040px){
+ @media(min-width: 1024px){
   .badge {
     top: 15px;
     right: 146px;
