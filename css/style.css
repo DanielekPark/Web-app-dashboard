@@ -21,6 +21,9 @@ canvas{
   background: white; 
 }
 
+span{
+  text-align: center;
+}
 /*-------------------------HEADER--------------------------------------*/
 .header{
   grid-area: header;
@@ -50,7 +53,7 @@ canvas{
   height: 5px;
   width: 5px;
   border-radius: 50%;
-  background-color: red;
+  background-color: limegreen; 
   position: absolute;
   top: 31px;
   right: 180px;
@@ -92,6 +95,10 @@ nav svg{
   margin-top: 2.5%; 
 }
 
+.search{
+  margin-top: 17px;
+  width: 90%;
+}
 /*----------------------------ALERT BAR------------------------*/
 .alert{ 
   background: red;
@@ -150,6 +157,12 @@ nav svg{
 
 
 /*----------------------SOCIAL STATUS------------------------------*/
+.social-media{
+  display: grid;
+  grid-row-gap: 10px;
+  align-content: space-around;
+}
+
 .social-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -185,6 +198,7 @@ nav svg{
 .members-container{
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  border: 1px solid grey;
 }
 .main img{
   width: 50%; 
@@ -197,7 +211,9 @@ nav svg{
 
 /*-------------------------------MESSAGING WIDGET-------------------*/
 .members{
-  display: grid;  
+  display: grid;
+  border: 1px solid grey; 
+  margin-top: 5px;   
 }
 
 .button-disabled,
@@ -293,11 +309,15 @@ nav svg{
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: red;
     position: absolute;
     top: 15px;
     right: 145px;
   } 
+
+  /*DASHBOARD*/
+  .search{
+    margin-top: 13px;
+  }
   
  /*-----------------------SIDEBAR NAVIGATION----------------------------*/
  .nav{
@@ -325,6 +345,7 @@ nav svg{
    .social-media{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 10px; 
  }
 
  /*-------------------------------NEW MEMBERS WIDGET-------------------*/
@@ -381,6 +402,10 @@ nav svg{
   .badge {
     top: 15px;
     right: 146px;
-}
+  }
+
+  .search{
+    margin-top: 5px;
+  }
  }
 
